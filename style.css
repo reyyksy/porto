@@ -1,11 +1,5 @@
-/* ========================================
-   PORTOFOLIO - STYLE UTAMA
-   ======================================== */
-
-/* Font dari Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* Variabel warna - Light Mode (default) */
 :root {
   --bg: #f8fafc;
   --bg-alt: #ffffff;
@@ -21,7 +15,6 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Variabel warna - Dark Mode */
 [data-theme="dark"] {
   --bg: #0f172a;
   --bg-alt: #1e293b;
@@ -35,7 +28,7 @@
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
 }
 
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -55,9 +48,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ========================================
-   NAVBAR
-   ======================================== */
 .navbar {
   position: fixed;
   top: 0;
@@ -80,7 +70,6 @@ body {
   align-items: center;
 }
 
-/* GANTI: Nama brand / logo kamu */
 .nav-logo {
   font-size: 1.25rem;
   font-weight: 800;
@@ -131,7 +120,6 @@ body {
   gap: 1rem;
 }
 
-/* Tombol Dark/Light Mode */
 .theme-toggle {
   background: none;
   border: 1.5px solid var(--border);
@@ -151,7 +139,6 @@ body {
   transform: rotate(15deg);
 }
 
-/* Hamburger Menu - Mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -171,9 +158,6 @@ body {
   border-radius: 2px;
 }
 
-/* ========================================
-   MAIN CONTENT
-   ======================================== */
 main {
   padding-top: 80px;
 }
@@ -211,9 +195,6 @@ main {
   font-size: 1.05rem;
 }
 
-/* ========================================
-   HERO (HOME)
-   ======================================== */
 .hero {
   min-height: calc(100vh - 80px);
   display: flex;
@@ -260,7 +241,6 @@ main {
   flex-wrap: wrap;
 }
 
-/* GANTI: Foto profil utama kamu */
 .hero-image {
   display: flex;
   justify-content: center;
@@ -281,9 +261,6 @@ main {
   transform: scale(1.03);
 }
 
-/* ========================================
-   BUTTONS
-   ======================================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -321,9 +298,6 @@ main {
   transform: translateY(-2px);
 }
 
-/* ========================================
-   ABOUT PAGE
-   ======================================== */
 .about-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -373,7 +347,6 @@ main {
   color: var(--text-muted);
 }
 
-/* Timeline Pendidikan */
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -426,7 +399,6 @@ main {
   font-size: 0.95rem;
 }
 
-/* Skills */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -451,7 +423,6 @@ main {
   transform: translateY(-2px);
 }
 
-/* School Photo Section */
 .school-section {
   margin-top: 4rem;
 }
@@ -465,9 +436,6 @@ main {
   box-shadow: var(--shadow);
 }
 
-/* ========================================
-   CONTACT PAGE
-   ======================================== */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -516,9 +484,6 @@ main {
   color: var(--text-muted);
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
 .footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
@@ -527,9 +492,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* ========================================
-   ANIMATIONS
-   ======================================== */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -541,9 +503,6 @@ main {
   transform: translateY(0);
 }
 
-/* ========================================
-   RESPONSIVE - MOBILE & TABLET
-   ======================================== */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;

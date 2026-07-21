@@ -1,14 +1,8 @@
-/* ========================================
-   PORTOFOLIO - INTERAKSI & ANIMASI
-   ======================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
   
-  // ===== DARK / LIGHT MODE =====
   const themeToggle = document.getElementById('themeToggle');
   const html = document.documentElement;
-  
-  // Cek localStorage atau preferensi sistem
+
   const savedTheme = localStorage.getItem('theme');
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
@@ -25,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', 'dark');
     }
   });
-  
-  // ===== MOBILE MENU =====
+
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('navMenu');
   
@@ -34,16 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
   });
-  
-  // Tutup menu saat link diklik (mobile)
+
   document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
     });
   });
-  
-  // ===== SCROLL ANIMATION (Fade In) =====
+
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -60,8 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
   });
-  
-  // ===== NAVBAR ACTIVE STATE =====
+
   const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
   const navSections = Array.from(navLinks)
     .map(link => document.querySelector(link.getAttribute('href')))
