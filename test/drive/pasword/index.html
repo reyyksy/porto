@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+</head>
+<body>
+
+<h2>Masukkan Password</h2>
+
+<input type="password" id="pw" placeholder="Password">
+<button onclick="cek()">Masuk</button>
+
+<p id="msg"></p>
+
+<script>
+const PASSWORD = "********";
+const LINK = "https://drive.google.com/drive/folders/1BEch0Uhkie4L-qmnpso1qwO_k0PWAI9O?usp=sharing";
+
+function cek() {
+    const pw = document.getElementById("pw").value;
+
+    if (pw === PASSWORD) {
+        window.location.href = LINK;
+    } else {
+        document.getElementById("msg").textContent = "Password salah.";
+    }
+}
+
+document.getElementById("pw").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") cek();
+});
+</script>
+
+</body>
+</html>
