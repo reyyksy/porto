@@ -35,6 +35,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const modal = document.getElementById('achievementModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalClose = document.querySelector('.modal-close');
+
+  const openAchievementModal = (imageSrc, title, description) => {
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeAchievementModal = () => {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.achievement-card').forEach(card => {
+    const imageSrc = card.dataset.image;
+    const title = card.dataset.title;
+    const description = card.dataset.description;
+
+    const triggers = card.querySelectorAll('.preview-btn, .achievement-preview-btn');
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        openAchievementModal(imageSrc, title, description);
+      });
+    });
+  });
+
+  modalClose.addEventListener('click', closeAchievementModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeAchievementModal();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('active')) {
+      closeAchievementModal();
+    }
+  });
+
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
