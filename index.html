@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
   <nav class="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">Reyy<span>.</span></a>
@@ -21,8 +23,10 @@
       </ul>
       
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" title="Ganti Tema">🌙</button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="theme-toggle" id="themeToggle" type="button" title="Ganti tema" aria-label="Aktifkan mode gelap">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Buka menu navigasi" aria-controls="navMenu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -31,7 +35,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-content">
@@ -178,7 +182,7 @@
               <p><strong>Perolehan:</strong> 2025</p>
               <p>Menambah pengalaman serta wawasan baru melalui seminar akademik dan kegiatan pengembangan diri di lingkungan kampus.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Dokumentasi</button>
           </article>
 
           <article class="achievement-card fade-in" data-image="images/penghargaan/juarasatap.jpg" data-title="Juara 3 Kelas 7B - SMPN 1 Atap Caringin" data-description="Saya meraih penghargaan juara 3 di kelas 7B saat menempuh pendidikan di SMPN 1 Atap Caringin pada tahun 2023, sebagai bentuk komitmen belajar dan prestasi akademik saya.">
@@ -194,7 +198,7 @@
               <p><strong>Perolehan:</strong> 2023</p>
               <p>Prestasi ini menjadi motivasi saya untuk terus belajar dengan lebih semangat dan konsisten di sekolah.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Penghargaan</button>
           </article>
 
           <article class="achievement-card fade-in" data-image="images/penghargaan/juarayasbam.jpg" data-title="Juara 3 Kelas 10B - SMK Yasbam" data-description="Saya memperoleh juara 3 di kelas 10B pada tahun 2025 di SMK Yasbam, sebagai hasil konsistensi belajar dan semangat saya dalam menuntut ilmu.">
@@ -210,7 +214,7 @@
               <p><strong>Perolehan:</strong> 2025</p>
               <p>Prestasi ini menunjukkan komitmen saya dalam belajar dan berusaha untuk terus berkembang di bidang akademik.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Penghargaan</button>
           </article>
 
           <article class="achievement-card fade-in" data-image="images/penghargaan/matematika.jpg" data-title="Final EMC 2025 Tingkat Nasional" data-description="Saya mengikuti event Eduversal Mathematics Competition di tahun 2025 dan berhasil meraih prestasi di tingkat nasional, menandakan kemampuan saya dalam logika dan analisis matematika.">
@@ -226,7 +230,7 @@
               <p><strong>Perolehan:</strong> 2025</p>
               <p>Meraih pengalaman berharga di kompetisi nasional dan memperkuat motivasi saya dalam bidang analisis dan matematika.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Dokumentasi</button>
           </article>
 
           <article class="achievement-card fade-in" data-image="images/penghargaan/programpahamai.png" data-title="Sertifikat Program Paham AI" data-description="Saya mengikuti event Paham AI di Senopati Academy pada tahun 2026 dan berhasil mengikuti program literasi AI yang membahas penggunaan teknologi kecerdasan buatan dalam kehidupan sehari-hari.">
@@ -242,7 +246,7 @@
               <p><strong>Perolehan:</strong> 2026</p>
               <p>Menunjukkan semangat saya dalam mempelajari AI, literasi digital, dan teknologi masa depan.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Sertifikat</button>
           </article>
 
           <article class="achievement-card fade-in" data-image="images/penghargaan/rakitpc.jpg" data-title="Juara Harapan 1 Rakit PC - Universitas Djuanda" data-description="Saya mengikuti event merakit PC di Universitas Djuanda yang diselenggarakan oleh Fakultas Ilmu Komputer pada tahun 2025 dan berhasil memperoleh penghargaan juara Harapan 1.">
@@ -258,7 +262,7 @@
               <p><strong>Perolehan:</strong> 2025</p>
               <p>Prestasi ini membuktikan kemampuan saya dalam teknologi komputer, kreativitas, serta kecepatan berpikir dalam bidang perakitan perangkat keras.</p>
             </div>
-            <button type="button" class="achievement-preview-btn">Preview Sertifikat</button>
+            <button type="button" class="achievement-preview-btn">Lihat Penghargaan</button>
           </article>
         </div>
       </div>
@@ -278,34 +282,34 @@
             <p>Pesan secara pribadi</p>
           </a>
 
-          <a href="https://github.com/reyyksy" target="_blank" class="contact-card fade-in">
+          <a href="https://github.com/reyyksy" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
             <div class="icon"><i class="fa-brands fa-github"></i></div>
             <h3>GitHub</h3>
             <p>Lihat proyek saya</p>
           </a>
 
-          <a href="https://www.instagram.com/reihan_ksy" target="_blank" class="contact-card fade-in">
+          <a href="https://www.instagram.com/reihan_ksy" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
             <div class="icon"><i class="fa-brands fa-instagram"></i></div>
             <h3>Instagram</h3>
             <p>Ikuti aktivitas saya</p>
           </a>
 
-           <a href="https://www.facebook.com/share/18TfydJt4n/" target="_blank" class="contact-card fade-in">
+           <a href="https://www.facebook.com/share/18TfydJt4n/" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
             <div class="icon"><i class="fa-brands fa-facebook"></i></div>
             <h3>Facebook</h3>
-            <p>Channel atau kontak</p>
+            <p>Terhubung di Facebook</p>
           </a>
 
-          <a href="https://tiktok.com/@reihankaissya" target="_blank" class="contact-card fade-in">
+          <a href="https://tiktok.com/@reihankaissya" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
             <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
             <h3>TikTok</h3>
-            <p>Channel atau kontak</p>
+            <p>Ikuti aktivitas saya</p>
             </a>
 
-          <a href="https://youtu.be/dQw4w9WgXcQ?si=NrOF1w3M4VABgS2k" target="_blank" class="contact-card fade-in">
+          <a href="https://youtu.be/dQw4w9WgXcQ?si=NrOF1w3M4VABgS2k" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
             <div class="icon"><i class="fa-brands fa-youtube"></i></div>
             <h3>YouTube</h3>
-            <p>Channel Video</p>
+            <p>Tonton video saya</p>
             </a>
           </div>
       </div>
@@ -318,7 +322,7 @@
     </div>
   </footer>
 
-  <div class="modal" id="achievementModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="modal" id="achievementModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-content">
       <button type="button" class="modal-close" aria-label="Tutup preview">&times;</button>
       <div class="modal-image-wrap">
